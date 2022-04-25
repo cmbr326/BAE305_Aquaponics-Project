@@ -12,18 +12,15 @@
 # Testing Description: 
 
 
-# Design Decision Discussion
+# Design Decision Discussion:
 
 
 
-
-
-# Testing results 
-
+# Testing results:
 
 
 
-# Test result Discussion
+# Test result Discussion:
 
 
 
