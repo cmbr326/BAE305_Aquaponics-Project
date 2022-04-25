@@ -1,9 +1,9 @@
 # BAE305_Aquaponics.Project
 
 
-# Summary:
+## Summary:
 
-   The purpose of this project is to have an autonomous fish tank system for the overall aquaponics project. The components included in this system are a temperature sensor amd display, automatic feeder, and an automatic water pump. Each of these components is vital to keep a livable enviroment for the fish while also benefiting the plants. The entire tank is a system and could be used by a consumer who wants a completely autonomous fish tank and could also add on the plant portion of this aquaponics system.   
+   The purpose of this project is to have an autonomous aquaponics system which includes an autonomous fish tank and plant growing enviroment. The two systems, the fish tank and the garden, work together by providing and filtering water for eachother. Each of these components is vital to keep a livable enviroment for the fish while also benefiting the plants. 
   
 
 # Design Description: 
