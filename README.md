@@ -30,7 +30,7 @@
 ## Testing Description: 
 Testing consisted of checking the sensor readings and the motor/pump functionality. Before soldering the wires and mounting the components to the build, it was important to check that all the components would operate correctly for their given job.   
    - The temperature sensor was tested to ensure that it was picking up the correct temperature and the code was able to display it correctly on the LCD screen.
-     - The temperature was initially tested by using heat from a person's hand to see if the temperature displayed was in the correct range and was able to fluctuate appropriately. 
+     - The temperature was initially tested by using heat from a person's hand to see if the temperature displayed was in the correct range and was able to fluctuate appropriately. The temperature sensor was held in a hand for two minutes and the results of the temperature change were displayed on the connected LCD screen. 
    
             
    - The water pump was tested to ensure that it could function correctly submerged and that it was able to pump enough water up to the plants. 
@@ -49,10 +49,22 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
 
 
 ## Testing results:
+   
+   #### Water Pump:
+   The pump was able to turn on for five seconds and turn off for five seconds. The pump was also successful in pumping water through the entire five feet of tubing needed. This was enough "data" to ensure it would work properly for this use. 
+   #### Temperature Sensor:
+   The temperature read in the room was 70.2 Degrees Fahrenheit. THe temperature reached after two minutes of holding the sensor in a hand was 98.5 Degrees Fahrenheit.
+   #### Fish Feeder:
+   The fish feeder output XXXX of food when it was set to run for one second. The feeder output XXXX of food when run for half a second. The feeder output XXXX of food when it ran for a quarter of a second. 
 
 
 
 ## Test result Discussion:
-
-
+The testing completed to test the functionality of the compenents does not require exact data outputs. This is because the testing done on the temperature sensor and the water pump were done just to ensure that they could read values and turn on and off. 
+   #### Water Pump:
+   The testing done was functionality testing so no exact data outputs are needed. The volumetric amount of water does not need to be measured because the water is based on soil moisture and not a calculation based on water quantity. 
+   #### Temperature Sensor:
+   The temperature sensor read appropriate values based on room temperature and human hand temperature.
+   #### Fish Feeder 
+   Based on the recommended amount of food for the small guppies, the quarter of a second motor run was sufficient in providing enough food to the fish without overfeeding. 
 
