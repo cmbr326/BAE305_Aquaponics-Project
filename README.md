@@ -20,8 +20,9 @@
 - Gravel 
 - Fish
 - Fish food 
-- Tote for plants
-- 
+- Large tote 
+- mesh screen
+
 
    ### Wiring Diagrams
  
