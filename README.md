@@ -46,7 +46,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
      - The amount of rotation was tested to ensure that the correct amount of food was being dispensed into the tank at each feeding. This was done by changing the time the motor would run.  
 
    - The soil moisture sensor was tested to ensure it worked properly before it was waterproofed and soldered together. 
-     - The sensor was placed in dry soil and moist soil to see what the levels were. For dry soil it was close to 0 and moist soil at the level desired was sround 800.
+     - After wiring the sesnor to a board as the SparkFun diagram recommended, the sensor was placed in dry soil and moist soil to see what the levels were. For dry soil it was close to 0 and moist soil at the level desired was sround 800.
      - When the sensor was ready, it was connected with the pump so that when the level dropped below 800, it would trigger the pump to start pumping water.
 
 ## Design Decision Discussion:
