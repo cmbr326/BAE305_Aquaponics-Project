@@ -10,9 +10,9 @@
 
    ### Supplies
 - Arduino Uno (3)
-- Water Pump (type?)
-- Motor (Type?)
-- Temperature sensor (type?) 
+- Water Pump (3V-5V Submersible Motor Pump)
+- Motor (ElectroPeak DC Gear Motor)
+- Temperature sensor (DS18B20 Temperature Sensor) 
 - Soil Moisture sensor (type?)
 - Light bulb
 - plug thing? 
@@ -55,7 +55,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    #### Temperature Sensor:
    The temperature read in the room was 70.2 Degrees Fahrenheit. THe temperature reached after two minutes of holding the sensor in a hand was 98.5 Degrees Fahrenheit.
    #### Fish Feeder:
-   The fish feeder output XXXX of food when it was set to run for one second. The feeder output XXXX of food when run for half a second. The feeder output XXXX of food when it ran for a quarter of a second. 
+   The fish feeder output 2 ounces of food when it was set to run for one second. The feeder output 1 ounce of food when run for half a second. The feeder output 0.5 ounces of food when it ran for a quarter of a second. The feeder holds approximately 30 ounces of standard goldfish pellets.
 
 
 
@@ -66,5 +66,5 @@ The testing completed to test the functionality of the compenents does not requi
    #### Temperature Sensor:
    The temperature sensor read appropriate values based on room temperature and human hand temperature.
    #### Fish Feeder 
-   Based on the recommended amount of food for the small guppies, the quarter of a second motor run was sufficient in providing enough food to the fish without overfeeding. 
+   Based on the recommended amount of food for the small guppies, the quarter of a second motor run was sufficient in providing enough food to the fish without overfeeding. When the feeder is fully stocked, it will run for approximately 40 cycles of feeding, which is equal to 20 days.
 
