@@ -25,7 +25,8 @@
 
 
    ### Wiring Diagrams
- 
+ ![image](https://user-images.githubusercontent.com/102320028/165436275-fee0916d-5ee1-46fa-840d-867c48a4dd41.png)
+
 
 ## Testing Description: 
 Testing consisted of checking the sensor readings and the motor/pump functionality. Before soldering the wires and mounting the components to the build, it was important to check that all the components would operate correctly for their given job.   
