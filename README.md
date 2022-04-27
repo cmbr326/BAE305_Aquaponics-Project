@@ -84,9 +84,9 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
 ## Test result Discussion:
 The testing completed to test the functionality of the compenents does not require exact data outputs. This is because the testing done on the temperature sensor and the water pump were done just to ensure that they could read values and turn on and off. 
    #### Water Pump:
-   The testing done was functionality testing so no exact data outputs are needed. The volumetric amount of water does not need to be measured because the water is based on soil moisture and not a calculation based on water quantity. 
+   The testing done was functionality testing so no exact data outputs are needed. The volumetric amount of water does not need to be measured because the water is based on soil moisture and not a calculation based on water quantity. Testing done to ensure that the pump was strong enough to meet the needs of the system showed that it well exceeded possible limitations. 
    #### Temperature Sensor:
-   The temperature sensor read appropriate values based on room temperature and human hand temperature.
+   The temperature sensor read appropriate values based on room temperature and human hand temperature. Testing resulted in the decision to not include a heater in the system. This may need to altered for alternate implementation tactics. 
    #### Fish Feeder 
    After implementation of the testing tank, the feeder was initially over feeding. Using guppies, the decision was to crush food pellets into smaller pieces and insert those into the hopper. This allowed more particulate to gather in the auger than previously tested, so there was a change required in the turning time per feeding. Moving forward with implementation to other fish and food types, the capabilities of the auger should be considered. If larger food is used, it is necessary to compare the amount leaving the auger per turn. For the mentioned food and feeding needs, it was ultimately decided the quarter of a second motor run was sufficient in providing enough food to the fish without overfeeding. When the feeder is fully stocked, it will run for approximately 40 cycles of feeding, which is equal to 20 days.
    #### Soil Moisture Sensor
