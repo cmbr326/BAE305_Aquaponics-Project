@@ -24,6 +24,7 @@
 - Large tote 
 - mesh screen
 - Wood for suspension system
+- Tubing 
 
 
    ### Wiring Diagrams
