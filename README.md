@@ -55,7 +55,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    #### Water Pump:
       
    #### Fish Feeder: 
-   After implementation of the testing tank, the feeder was initially over feeding. Using tetras, the decision was to crush food pellets into smaller pieces and insert those into the hopper. This allowed more particulate to gather in the auger than previously tested, so there was a change required in the turning time per feeding. Moving forward with implementation to other fish and food types, the capabilities of the auger should be considered. If larger food is used, it is necessary to compare the amount leaving the auger per turn. For the mentioned food and feeding needs, it was ultimately decided to turn the auger for **** every 12 hours.
+   
    #### Soil Moisture Sensor
    The circuit for the sensor was mounted to the font of the table for the plant bed so it could reach the inside of the bed, while also being near the board for the pump so it could send the moisture readings to the pump. The sensor was waterproofed with hot glue to ensure water wouldn't ruin it. Based on the recommended soil moisture for the plants, lettuce and basil, the moisture level 800 was determined to be the minimum level. 
         
@@ -77,6 +77,6 @@ The testing completed to test the functionality of the compenents does not requi
    #### Temperature Sensor:
    The temperature sensor read appropriate values based on room temperature and human hand temperature.
    #### Fish Feeder 
-   Based on the recommended amount of food for the small guppies, the quarter of a second motor run was sufficient in providing enough food to the fish without overfeeding. When the feeder is fully stocked, it will run for approximately 40 cycles of feeding, which is equal to 20 days.
+   After implementation of the testing tank, the feeder was initially over feeding. Using guppies, the decision was to crush food pellets into smaller pieces and insert those into the hopper. This allowed more particulate to gather in the auger than previously tested, so there was a change required in the turning time per feeding. Moving forward with implementation to other fish and food types, the capabilities of the auger should be considered. If larger food is used, it is necessary to compare the amount leaving the auger per turn. For the mentioned food and feeding needs, it was ultimately decided the quarter of a second motor run was sufficient in providing enough food to the fish without overfeeding. When the feeder is fully stocked, it will run for approximately 40 cycles of feeding, which is equal to 20 days.
    #### Soil Moisture Sensor
    The moisture sensor was reading appropriated values around 880. The minimum moisture level of 800 was enugh for the plants, while not taking too much water from the fish tank. 
