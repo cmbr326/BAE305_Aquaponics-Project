@@ -70,7 +70,11 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    
    #### Soil Moisture Sensor
    The circuit for the sensor was mounted to the font of the table for the plant bed so it could reach the inside of the bed, while also being near the board for the pump so it could send the moisture readings to the pump. The sensor was waterproofed with hot glue to ensure water wouldn't ruin it. Based on the recommended soil moisture for the plants, lettuce and basil, the moisture level 800 was determined to be the minimum level. If the level drops below, the pump is signaled. The power supply is a pack of batteries that is also attached to the stand.
-        
+   #### Plant Bed
+   A clear plastic tote was used to hold the garden. Holes of about a ¼ in diameter were drilled about 2 in apart in the center region of the bottom of the tote.  Layers of fabric and a metal screen were placed at the bottom to keep dirt from falling through the holes. The rest of the tote was filled with dirt and plants on top. A tube was connected to the water pump and holes were put about 2 inches apart along the tube. The tube was snaked around the top of the garden so that water would be evenly dispersed
+   #### Plant Lamp
+   The automatic grow light was made using an extension cord, AC outlet, relay, Arduino, and wires. The circuitry can be built by following this tutorial. The grow light was hung off a PVC pipe connected to the stand so that it would be well-positioned to give all plants adequate light.
+
 ## Testing results:
    
    #### Water Pump:
@@ -81,6 +85,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    The fish feeder output 2 ounces of food when it was set to run for one second. The feeder output 1 ounce of food when run for half a second. The feeder output 0.5 ounces of food when it ran for a quarter of a second. The feeder holds approximately 30 ounces of standard goldfish pellets.
    #### Soil Moisture Sensor:
    The moisture was around 880 when we first watered the plants before hooking up the pump system. This was the desirable moisture level. When the sensor was removed from the soil, the moisture level dropped which then successfully triggered the pump.
+   #### Plant Lamp
 
 ## Test result Discussion:
 The testing completed to test the functionality of the compenents does not require exact data outputs. This is because the testing done on the temperature sensor and the water pump were done just to ensure that they could read values and turn on and off. 
@@ -92,3 +97,4 @@ The testing completed to test the functionality of the compenents does not requi
    After implementation of the testing tank, the feeder was initially over feeding. Using guppies, the decision was to crush food pellets into smaller pieces and insert those into the hopper. This allowed more particulate to gather in the auger than previously tested, so there was a change required in the turning time per feeding. Moving forward with implementation to other fish and food types, the capabilities of the auger should be considered. If larger food is used, it is necessary to compare the amount leaving the auger per turn. For the mentioned food and feeding needs, it was ultimately decided the quarter of a second motor run was sufficient in providing enough food to the fish without overfeeding. When the feeder is fully stocked, it will run for approximately 40 cycles of feeding, which is equal to 20 days.
    #### Soil Moisture Sensor
    The moisture sensor was reading appropriate values, around 880. The minimum moisture level of 800 was enough for the plants, while not taking too much water from the fish tank. When the sensor was removed from the soil and exposed to the air, it detects a value lower than 800 and triggers the pump. 
+   #### Plant Lamp
