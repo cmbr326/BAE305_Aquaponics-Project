@@ -25,6 +25,7 @@
 
 
    ### Wiring Diagrams
+Fish Tank Circuits
  ![image](https://user-images.githubusercontent.com/102320028/165436275-fee0916d-5ee1-46fa-840d-867c48a4dd41.png)
 
 
