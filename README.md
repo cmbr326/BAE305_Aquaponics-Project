@@ -23,6 +23,7 @@
 - Fish food 
 - Large tote 
 - mesh screen
+- Wood for suspension system
 
 
    ### Wiring Diagrams
@@ -53,8 +54,16 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
 ## Design Decision Discussion:
 
    #### Water Pump:
+   The water pump operated to move water from the fish tank to the irrigation system of the plant environment. Several design criteria were chosen in the placement and function of the pump. The model of the pump is the 3V-5V Submersible Motor Pump. The pump has a covering around it to ensure that neither large particulate nor fish are pulled into the valve. The pump is attached to the upper portion of the tank by Velcro. This placement allows for both convenient maintenance and minimal strain on the pump to move the water up around 1 foot. The pump operates off of a signal from the soil moisture sensor. 
+   
+   #### Temperature Sensor:
+   The DS18B20 temperature sensor allows the user to know the temperature in Fahrenheit of the tank water. This is important for varying fish and their needs. The temperature is displayed on the screen and informs the user on the temperature in real time. For the conditions and fish in the testing tank it was decided that there was no need for a heater. However, with the sensor it would be easy to monitor a heater if implemented. 
       
    #### Fish Feeder: 
+   The Fish feeder consists of 7 individual 3D prints created on an Original Prusa Mini with PLA filament. These pieces include the hopper ( which can hold 20 oz of food) and lid, two supporting joints to support and attach the system, the auger and auger tube, and the connecting joint for the motor. This was joined with tacky glue. The system was then mounted with hot glue to a platform which was tied to the back left corner of the suspension system. This allows the feeder to hang over the tank and turn a decided amount of time, dispensing food into the tank. 
+   
+   #### Suspension System: 
+   The suspension system was made of 2x4 wood to create two legs which could hold up the plant system above the tank. The need was for the center of the system to be open to allow water to drain from the holes of the planter back into the tank when necessary. This was done by creating two U shaped fixtures, then tying them together with another 2x4 on the sides on the platform. The suspension system also operates to hold up the electronics, including the fish feeder, Arduino, and screen display
    
    #### Soil Moisture Sensor
    The circuit for the sensor was mounted to the font of the table for the plant bed so it could reach the inside of the bed, while also being near the board for the pump so it could send the moisture readings to the pump. The sensor was waterproofed with hot glue to ensure water wouldn't ruin it. Based on the recommended soil moisture for the plants, lettuce and basil, the moisture level 800 was determined to be the minimum level. 
