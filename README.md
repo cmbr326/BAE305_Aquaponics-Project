@@ -35,7 +35,7 @@ Soil Moisture Diagram
 
 ## Testing Description: 
 Testing consisted of checking the sensor readings and the motor/pump functionality. Before soldering the wires and mounting the components to the build, it was important to check that all the components would operate correctly for their given job.   
-   - The temperature sensor was tested to ensure that it was picking up the correct temperature and the code was able to display it correctly on the LCD screen.
+   - The temperature sensor for the fish tank was tested to ensure that it was picking up the correct temperature and the code was able to display it correctly on the LCD screen.
      - The temperature was initially tested by using heat from a person's hand to see if the temperature displayed was in the correct range and was able to fluctuate appropriately. The temperature sensor was held in a hand for two minutes and the results of the temperature change were displayed on the connected LCD screen. 
    
             
@@ -51,6 +51,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    - The soil moisture sensor was tested to ensure it worked properly before it was waterproofed and soldered together. 
      - After wiring the sesnor to a board as the SparkFun diagram recommended, the sensor was placed in dry soil and moist soil to see what the levels were. For dry soil it was close to 0 and moist soil at the level desired was sround 800.
      - When the sensor was ready, it was placed in the soil and connected with the pump so that when the level dropped below 800, it would trigger the pump to start pumping water.
+     - The sensor was also connected to an LCD screen so that the moisture level was displayed.
 
 ## Design Decision Discussion:
 
@@ -69,7 +70,8 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    The suspension system was made of 2x4 wood to create two legs which could hold up the plant system above the tank. The need was for the center of the system to be open to allow water to drain from the holes of the planter back into the tank when necessary. This was done by creating two U shaped fixtures, then tying them together with another 2x4 on the sides on the platform. The suspension system also operates to hold up the electronics, including the fish feeder, Arduino, and screen display
    
    #### Soil Moisture Sensor
-   The circuit for the sensor was mounted to the font of the table for the plant bed so it could reach the inside of the bed, while also being near the board for the pump so it could send the moisture readings to the pump. The sensor was waterproofed with hot glue to ensure water wouldn't ruin it. Based on the recommended soil moisture for the plants, lettuce and basil, the moisture level 800 was determined to be the minimum level. If the level drops below, the pump is signaled. The power supply is a pack of batteries that is also attached to the stand.
+   The circuit for the sensor was mounted to the font of the table for the plant bed so it could reach the inside of the bed, while also being near the board for the pump so it could send the moisture readings to the pump. The sensor was waterproofed with hot glue to ensure water wouldn't ruin it. Based on the recommended soil moisture for the plants, lettuce and basil, the moisture level 800 was determined to be the minimum level. If the level drops below, the pump is signaled. The power supply is a pack of batteries that is also attached to the stand. So that the moisture level coud be monitored,it was connected to an LCD screen. It will not show values under 800 because the pump is triggered and draws too much power, causing the screen to go blank. However, this isn't a problem since the value is not needed below 800. 
+   
    #### Plant Bed
    A clear plastic tote was used to hold the garden. Holes of about a ¼ in diameter were drilled about 2 in apart in the center region of the bottom of the tote.  Layers of fabric and a metal screen were placed at the bottom to keep dirt from falling through the holes. The rest of the tote was filled with dirt and plants on top. A tube was connected to the water pump and holes were put about 2 inches apart along the tube. The tube was snaked around the top of the garden so that water would be evenly dispersed
    #### Plant Lamp
