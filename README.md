@@ -104,69 +104,69 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
     Basic skecth to print out soil moisture values to the Serial Monitor 
 
     Released under the MIT License(http://opensource.org/licenses/MIT)
-*/
-int pump = 4;
-int val = 0; //value for storing moisture value 
-int soilPin = A0;//Declare a variable for the soil moisture sensor 
-int soilPower = 7;//Variable for Soil moisture Power
+    */
+    int pump = 4;
+    int val = 0; //value for storing moisture value 
+    int soilPin = A0;//Declare a variable for the soil moisture sensor 
+    int soilPower = 7;//Variable for Soil moisture Power
 
-#include <LiquidCrystal.h>
-LiquidCrystal lcd(13, 12, 11, 10, 9, 8);
+    #include <LiquidCrystal.h>
+    LiquidCrystal lcd(13, 12, 11, 10, 9, 8);
 
-//Rather than powering the sensor through the 3.3V or 5V pins, 
-//we'll use a digital pin to power the sensor. This will 
-//prevent corrosion of the sensor as it sits in the soil. 
+    //Rather than powering the sensor through the 3.3V or 5V pins, 
+    //we'll use a digital pin to power the sensor. This will 
+    //prevent corrosion of the sensor as it sits in the soil. 
 
 
-void setup() 
-{
-  Serial.begin(9600); // open serial over USB
-  pinMode(pump, OUTPUT);
-  pinMode(soilPower, OUTPUT);//Set D7 as an OUTPUT
-  digitalWrite(soilPower, LOW);//Set to LOW so no power is flowing through the sensor
+    void setup() 
+    {
+    Serial.begin(9600); // open serial over USB
+      pinMode(pump, OUTPUT);
+      pinMode(soilPower, OUTPUT);//Set D7 as an OUTPUT
+      digitalWrite(soilPower, LOW);//Set to LOW so no power is flowing through the sensor
 
-  lcd.begin(16, 2);
-  lcd.clear();
+      lcd.begin(16, 2);
+      lcd.clear();
   
 
-}
+    }
 
-void loop() 
-{
-Serial.print("Soil Moisture = ");    
-//get soil moisture value from the function below and print it
-Serial.println(readSoil());
+    void loop() 
+    {
+    Serial.print("Soil Moisture = ");    
+    //get soil moisture value from the function below and print it
+    Serial.println(readSoil());
 
-//This 1 second timefrme is used so you can test the sensor and see it change in real-time.
-//For in-plant applications, you will want to take readings much less frequently.
-delay(1000);//take a reading every second
+    //This 1 second timefrme is used so you can test the sensor and see it change in real-time.
+    //For in-plant applications, you will want to take readings much less frequently.
+    delay(1000);//take a reading every second
 
-lcd.clear(); 
-lcd.print("Moisture: ");                             
-lcd.setCursor(10, 0);                      
+    lcd.clear(); 
+    lcd.print("Moisture: ");                             
+    lcd.setCursor(10, 0);                      
                 
-lcd.print(val);  
+    lcd.print(val);  
 
-if (val <= 800){
-  digitalWrite(pump, HIGH);
-  delay(30000);
-  digitalWrite(pump, LOW);
+    if (val <= 800){
+      digitalWrite(pump, HIGH);
+      delay(30000);
+      digitalWrite(pump, LOW);
  
   
-}
+    }
 
-}
-//This is a function used to get the soil moisture content
-int readSoil()
+    }
+    //This is a function used to get the soil moisture content
+    int readSoil()
   
-{
+    {
 
     digitalWrite(soilPower, HIGH);//turn D7 "On"
     delay(10);//wait 10 milliseconds 
     val = analogRead(soilPin);//Read the SIG value form sensor 
     digitalWrite(soilPower, LOW);//turn D7 "Off"
     return val;//send current moisture value
-}
+    }
    
    
    <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/moisturepanel.jpg" width="300" height="150">
