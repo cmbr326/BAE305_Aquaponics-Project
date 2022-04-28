@@ -95,6 +95,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    
    #### Soil Moisture Sensor:
    The circuit for the sensor was mounted to the font of the table for the plant bed so it could reach the inside of the bed, while also being near the board for the pump so it could send the moisture readings to the pump. The sensor was waterproofed with hot glue to ensure water wouldn't ruin it. Based on the recommended soil moisture for the plants, lettuce and basil, the moisture level 800 was determined to be the minimum level. If the level drops below, the pump is signaled. The power supply is a pack of batteries that is also attached to the stand. The sensor was connected to an LCD screen so that the moisture level could be monitored. It will not show values under 800 because the pump is triggered and draws too much power, causing the screen to go blank. However, this isn't a problem since the value is not needed below 800. 
+   
    <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/moisturepanel.jpg" width="300" height="150">
    
    <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/moisture%20sensor%20in%20bed.jpg" width="300" height="150">
@@ -111,6 +112,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/humsensorinbed.jpg" width="300" height="150">
    
    <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/humidityscreen.jpg" width="300" height="150">
+
 ## Testing results:
    
    #### Water Pump:
