@@ -46,6 +46,9 @@ Soil Moisture Sensor and Pump
  
  <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/circuit2.jpg" width="600" height="300">
  
+  <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/panels.jpg" width="500" height="400">
+ 
+ 
 ## Testing Description: 
 Testing consisted of checking the sensor readings and the motor/pump functionality. Before soldering the wires and mounting the components to the build, it was important to check that all the components would operate correctly for their given job.   
    - The temperature sensor for the fish tank was tested to ensure that it was picking up the correct temperature and the code was able to display it correctly on the LCD screen.
@@ -84,7 +87,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    #### Fish Feeder: 
    The Fish feeder consists of 7 individual 3D prints created on an Original Prusa Mini with PLA filament. These pieces include the hopper ( which can hold 20 oz of food) and lid, two supporting joints to support and attach the system, the auger and auger tube, and the connecting joint for the motor. This was joined with tacky glue. The motor selected to tuen the auger is the ElectroPeak DC Gear Motor. The system was then mounted with hot glue to a platform which was tied to the back left corner of the suspension system. This allows the feeder to hang over the tank and turn a decided amount of time, dispensing food directly into the tank. 
    
-   ![image](https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/render%20collection.png)
+   <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/render%20collection.png" width="600" height="300">
    
    #### Suspension System: 
    The suspension system was made of 2x4 wood to create two legs which could hold up the plant system above the tank. The need was for the center of the system to be open to allow water to drain from the holes of the planter back into the tank when necessary. This was done by creating two U shaped fixtures, then tying them together with another 2x4 on the sides on the platform. The suspension system also operates to hold up the electronics, including the fish feeder, Arduino, and screen display
