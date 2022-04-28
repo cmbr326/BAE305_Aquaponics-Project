@@ -14,7 +14,7 @@
 - Water Pump (3V-5V Submersible Motor Pump)
 - Motor (ElectroPeak DC Gear Motor)
 - Temperature sensor (DS18B20 Temperature Sensor) 
-- Soil Moisture sensor (type?)
+- Soil Moisture sensor (SparkFun Soil Moisure Sensor with screw terminals SEN-13637)
 - Light bulb
 - plug thing? 
 - Fish tank
