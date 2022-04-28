@@ -188,10 +188,15 @@ pinMode(2, OUTPUT);
 }
 
 void loop() {
+  
   // put your main code here, to run repeatedly:
+  
 digitalWrite(2, HIGH);
+
 delay(36000000);
+
 digitalWrite(2, LOW);
+
 delay(50400000);
 }
    
