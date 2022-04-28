@@ -29,12 +29,11 @@
 - Wood for suspension system
 - Tubing 
 
-
    ### Wiring Diagrams
 Fish Tank Circuits
  ![image](https://user-images.githubusercontent.com/102320028/165436275-fee0916d-5ee1-46fa-840d-867c48a4dd41.png)
 Soil Moisture Diagram
- ![image](https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/soilMoisture.png)
+ <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/soilMoisture.png" width="500" height="500">
 Soil Moisture Sensor and Pump 
  ![image](https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/circuit.jpg)
  Temperature and Humidity Sensor
