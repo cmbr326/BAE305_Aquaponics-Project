@@ -57,7 +57,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
             
    - The water pump was tested to ensure that it could function correctly submerged and that it was able to pump enough water up to the plants. 
      - The water pump was initially tested by writing a simple code to turn on the pump for five seconds then turn off the pump for five seconds. 
-     - The strength of the water pump was then tested by placing the pump into a bin on water and hooking up the  five foot tube and seeing if the water was being pumped up through the entire length of the tube and exiting through the other end of the tubing. 
+     - The strength of the water pump was then tested by placing the pump into a bin on water and hooking up the  five-foot tube and seeing if the water was being pumped up through the entire length of the tube and exiting through the other end of the tubing. 
 
 
    - The motor controlling the fish feeder was tested to ensure it could turn the 3-D printed feeder smoothly and that it supplied the correct amount of food. The motor should be able to turn the auger piece inside of the 3D printed feeder. 
@@ -65,14 +65,14 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
      - The amount of rotation was tested to ensure that the correct amount of food was being dispensed into the tank at each feeding. This was done by changing the time the motor would run.  
 
    - The soil moisture sensor was tested to ensure it worked properly before it was waterproofed and soldered together. 
-     - After wiring the sesnor to a board as the SparkFun diagram recommended, the sensor was placed in dry soil and moist soil to see what the levels were. For dry soil it was close to 0 and moist soil at the level desired was sround 800.
+     - After wiring the sensor to a board as the SparkFun diagram recommended, the sensor was placed in dry soil and moist soil to see what the levels were. For dry soil it was close to 0 and moist soil at the level desired was around 800.
      - When the sensor was ready, it was placed in the soil and connected with the pump so that when the level dropped below 800, it would trigger the pump to start pumping water.
      - The sensor was also connected to an LCD screen so that the moisture level was displayed.
 
    - The lamp was converted from DC to AC to control when the light was on.
      -  For the lamp, we first tested a cycle of turning on for 5 seconds and off for 5 seconds, which was a success. We then changed the code so that it would be on and off for the proper amount of time for the plants.
 
-   - The temperature and humididty sensor was tested to ensure it worked properly before it was attached.
+   - The temperature and humidity sensor were tested to ensure it worked properly before it was attached.
      -  A DHT 20 was originally tested to measure temperature and humidity, through testing it would return ‘failure to read’ messages. The DHT 20 would be replaced by a DHT 22 which would return readings that would were found to be accurate in comparison to a standard thermometer’s readings.
 
 
@@ -85,7 +85,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    The DS18B20 temperature sensor allows the user to know the temperature in Fahrenheit of the tank water. This is important for varying fish and their needs. The temperature is displayed on the screen and informs the user on the temperature in real time. For the conditions and fish in the testing tank it was decided that there was no need for a heater. However, with the sensor it would be easy to monitor a heater if implemented.
   
    #### Fish Feeder: 
-   The Fish feeder consists of 7 individual 3D prints created on an Original Prusa Mini with PLA filament. These pieces include the hopper ( which can hold 20 oz of food) and lid, two supporting joints to support and attach the system, the auger and auger tube, and the connecting joint for the motor. This was joined with tacky glue. The motor selected to tuen the auger is the ElectroPeak DC Gear Motor. The system was then mounted with hot glue to a platform which was tied to the back left corner of the suspension system. This allows the feeder to hang over the tank and turn a decided amount of time, dispensing food directly into the tank. 
+   The Fish feeder consists of 7 individual 3D prints created on an Original Prusa Mini with PLA filament. These pieces include the hopper (which can hold 20 oz of food) and lid, two supporting joints to support and attach the system, the auger and auger tube, and the connecting joint for the motor. This was joined with tacky glue. The motor selected to turn the auger is the ElectroPeak DC Gear Motor. The system was then mounted with hot glue to a platform which was tied to the back left corner of the suspension system. This allows the feeder to hang over the tank and turn a decided amount of time, dispensing food directly into the tank. 
    
    <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/render%20collection.png" width="600" height="300">
    
@@ -93,7 +93,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    The suspension system was made of 2x4 wood to create two legs which could hold up the plant system above the tank. The need was for the center of the system to be open to allow water to drain from the holes of the planter back into the tank when necessary. This was done by creating two U shaped fixtures, then tying them together with another 2x4 on the sides on the platform. The suspension system also operates to hold up the electronics, including the fish feeder, Arduino, and screen display
    
    #### Soil Moisture Sensor:
-   The circuit for the sensor was mounted to the font of the table for the plant bed so it could reach the inside of the bed, while also being near the board for the pump so it could send the moisture readings to the pump. The sensor was waterproofed with hot glue to ensure water wouldn't ruin it. Based on the recommended soil moisture for the plants, lettuce and basil, the moisture level 800 was determined to be the minimum level. If the level drops below, the pump is signaled. The power supply is a pack of batteries that is also attached to the stand. So that the moisture level coud be monitored,it was connected to an LCD screen. It will not show values under 800 because the pump is triggered and draws too much power, causing the screen to go blank. However, this isn't a problem since the value is not needed below 800. 
+   The circuit for the sensor was mounted to the font of the table for the plant bed so it could reach the inside of the bed, while also being near the board for the pump so it could send the moisture readings to the pump. The sensor was waterproofed with hot glue to ensure water wouldn't ruin it. Based on the recommended soil moisture for the plants, lettuce and basil, the moisture level 800 was determined to be the minimum level. If the level drops below, the pump is signaled. The power supply is a pack of batteries that is also attached to the stand. The sensor was connected to an LCD screen so that the moisture level could be monitored. It will not show values under 800 because the pump is triggered and draws too much power, causing the screen to go blank. However, this isn't a problem since the value is not needed below 800. 
    <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/moisturepanel.jpg" width="300" height="150">
    
    <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/moisture%20sensor%20in%20bed.jpg" width="300" height="150">
@@ -115,7 +115,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    #### Water Pump:
    The pump was able to turn on for five seconds and turn off for five seconds. The pump was also successful in pumping water through the entire five feet of tubing needed. This was enough "data" to ensure it would work properly for this use. 
    #### Temperature Sensor:
-   The temperature read in the room was 70.2 Degrees Fahrenheit. THe temperature reached after two minutes of holding the sensor in a hand was 98.5 Degrees Fahrenheit.
+   The temperature read in the room was 70.2 Degrees Fahrenheit. The temperature reached after two minutes of holding the sensor in a hand was 98.5 Degrees Fahrenheit.
    
    <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/fishfeeder.jpg" width="300" height="200">
    
@@ -133,11 +133,11 @@ The lamp is able to turn on for 10 hours and off for 14 hours as long as it is p
 
 
 ## Test result Discussion:
-The testing completed to test the functionality of the compenents does not require exact data outputs. This is because the testing done on the temperature sensor and the water pump were done just to ensure that they could read values and turn on and off. 
+The testing completed to test the functionality of the components does not require exact data outputs. This is because the testing done on the temperature sensor and the water pump were done just to ensure that they could read values and turn on and off. 
    #### Water Pump:
    The testing done was functionality testing so no exact data outputs are needed. The volumetric amount of water does not need to be measured because the water is based on soil moisture and not a calculation based on water quantity. Testing done to ensure that the pump was strong enough to meet the needs of the system showed that it well exceeded possible limitations. 
    #### Temperature Sensor:
-   The temperature sensor read appropriate values based on room temperature and human hand temperature. Testing resulted in the decision to not include a heater in the system. This may need to altered for alternate implementation tactics. 
+   The temperature sensor read appropriate values based on room temperature and human hand temperature. Testing resulted in the decision to not include a heater in the system. This may need to be altered for alternate implementation tactics. 
    #### Fish Feeder:
    After implementation of the testing tank, the feeder was initially over feeding. Using guppies, the decision was to crush food pellets into smaller pieces and insert those into the hopper. This allowed more particulate to gather in the auger than previously tested, so there was a change required in the turning time per feeding. Moving forward with implementation to other fish and food types, the capabilities of the auger should be considered. If larger food is used, it is necessary to compare the amount leaving the auger per turn. For the mentioned food and feeding needs, it was ultimately decided the quarter of a second motor run was sufficient in providing enough food to the fish without overfeeding. When the feeder is fully stocked, it will run for approximately 40 cycles of feeding, which is equal to 20 days.
    #### Soil Moisture Sensor:
@@ -145,5 +145,5 @@ The testing completed to test the functionality of the compenents does not requi
    #### Plant Lamp:
    The largest number usable for the variety of Arduino we are using is 2^32, which is about 2 billion. Our time values came in at well under this at only a few million. The plant lamp was found to be well-suited for our application, as we could use standard wall plugs connected to the Arduino which regulated the time. 
    #### Temperature and Humidity Sensor:
-   The readings are accurate but the sensor is slow to react to extreme changes in temperature. Due to the size of the LCD only two readings will fit on the screen. While the sensor measures humidity and both temperature and heat index in Fahrenheit and Celcius, only humidity and temperature (Fahrenheit) are displayed since they are most relevant to the system.
+   The readings are accurate, but the sensor is slow to react to extreme changes in temperature. Due to the size of the LCD only two readings will fit on the screen. While the sensor measures humidity and both temperature and heat index in Fahrenheit and Celsius, only humidity and temperature (Fahrenheit) are displayed since they are most relevant to the system.
 
