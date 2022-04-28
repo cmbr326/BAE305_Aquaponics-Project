@@ -17,7 +17,7 @@
 - Temperature sensor (DS18B20 Temperature Sensor) 
 - Soil Moisture sensor (SparkFun Soil Moisure Sensor with screw terminals SEN-13637)
 - Light bulb
-- plug thing? 
+- Mobile outlet
 - Fish tank
 - Gravel 
 - Fish
