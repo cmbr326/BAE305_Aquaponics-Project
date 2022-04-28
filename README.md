@@ -177,7 +177,23 @@ int readSoil()
    A clear plastic tote was used to hold the garden. Holes of about a ¼ in diameter were drilled about 2 in apart in the center region of the bottom of the tote.  Layers of fabric and a metal screen were placed at the bottom to keep dirt from falling through the holes. The rest of the tote was filled with dirt and plants on top. A tube was connected to the water pump and holes were put about 2 inches apart along the tube. The tube was snaked around the top of the garden so that water would be evenly dispersed.
    
    #### Plant Lamp:
-   The automatic grow light was made using an extension cord, AC outlet, relay, Arduino, and wires. The circuitry can be built by following  [This Tutorial](https://www.circuitbasics.com/build-an-arduino-controlled-power-outlet/). The grow light was hung off a PVC pipe connected to the stand so that it would be well-positioned to give all plants adequate light.
+   The automatic grow light was made using an extension cord, AC outlet, relay, Arduino, and wires. The circuitry can be built by following  [This Tutorial](https://www.circuitbasics.com/build-an-arduino-controlled-power-outlet/). The grow light was hung off a PVC pipe connected to the stand so that it would be well-positioned to give all plants adequate light. The following code was used to time when the light was on and off.
+   
+   void setup() {
+   
+  // put your setup code here, to run once:
+pinMode(2, OUTPUT);
+
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+digitalWrite(2, HIGH);
+delay(36000000);
+digitalWrite(2, LOW);
+delay(50400000);
+}
    
    #### Temperature and Humidity Sensor:
  A humidity and temperature sensor was researched and chosen. The circuitry of the LCD and sensor can be seen in the circuit section above. The Arduino was anchored to the base of the stand for display of results and the sensor is fashioned by zip ties on the inside wall of the tote to measure the humidity and temperature of the plants environment.
