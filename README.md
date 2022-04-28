@@ -10,7 +10,7 @@
  
 ## Design Description: 
 
-  <img src="(https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/IMG_6506.jpg" width="500" height="500">
+  <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/IMG_6506.jpg" width="500" height="500">
    
    ### Supplies
 - Arduino Uno (3)
