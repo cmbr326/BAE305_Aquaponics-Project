@@ -104,6 +104,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    The moisture was around 880 when we first watered the plants before hooking up the pump system. This was the desirable moisture level. When the sensor was removed from the soil, the moisture level dropped which then successfully triggered the pump.
    
    #### Plant Lamp:
+   The lamp is able to turn on for 10 hours and off for 14 hours as long as it is plugged into the wall. 
    
    #### Temperature and Humidity Sensor:
    The DHT sensor constantly outputs temperature in Fahrenheit and humidity on the display. If powered by a laptop, temperature in Celsius as well as the heat index in Celsius and Fahrenheit is available through the Arduino code.
