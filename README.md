@@ -85,17 +85,21 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    The water pump operated to move water from the fish tank to the irrigation system of the plant environment. Several design criteria were chosen in the placement and function of the pump. The model of the pump is the 3V-5V Submersible Motor Pump. The pump has a covering around it to ensure that neither large particulate nor fish are pulled into the valve. The pump is attached to the upper portion of the tank by Velcro. This placement allows for both convenient maintenance and minimal strain on the pump to move the water up around 1 foot. The pump operates off of a signal from the soil moisture sensor. 
    
 #### Temperature Sensor:
+
    The DS18B20 temperature sensor allows the user to know the temperature in Fahrenheit of the tank water. This is important for varying fish and their needs. The temperature is displayed on the screen and informs the user on the temperature in real time. For the conditions and fish in the testing tank it was decided that there was no need for a heater. However, with the sensor it would be easy to monitor a heater if implemented.
   
-   #### Fish Feeder: 
+ #### Fish Feeder: 
+ 
    The Fish feeder consists of 7 individual 3D prints created on an Original Prusa Mini with PLA filament. These pieces include the hopper (which can hold 20 oz of food) and lid, two supporting joints to support and attach the system, the auger and auger tube, and the connecting joint for the motor. This was joined with tacky glue. The motor selected to turn the auger is the ElectroPeak DC Gear Motor. The system was then mounted with hot glue to a platform which was tied to the back left corner of the suspension system. This allows the feeder to hang over the tank and turn a decided amount of time, dispensing food directly into the tank. 
    
    <img src= "render collection.png" width="600" height="300">
    
-   #### Suspension System: 
+ #### Suspension System: 
+   
    The suspension system was made of 2x4 wood to create two legs which could hold up the plant system above the tank. The need was for the center of the system to be open to allow water to drain from the holes of the planter back into the tank when necessary. This was done by creating two U shaped fixtures, then tying them together with another 2x4 on the sides on the platform. The suspension system also operates to hold up the electronics, including the fish feeder, Arduino, and screen display
    
-   #### Soil Moisture Sensor:
+ #### Soil Moisture Sensor:
+   
    The circuit for the sensor was mounted to the font of the table for the plant bed so it could reach the inside of the bed, while also being near the board for the pump so it could send the moisture readings to the pump. The sensor was waterproofed with hot glue to ensure water wouldn't ruin it. Based on the recommended soil moisture for the plants, lettuce and basil, the moisture level 800 was determined to be the minimum level. If the level drops below, the pump is signaled. The power supply is a pack of batteries that is also attached to the stand. The sensor was connected to an LCD screen so that the moisture level could be monitored. It will not show values under 800 because the pump is triggered and draws too much power, causing the screen to go blank. However, this isn't a problem since the value is not needed below 800. The following code was used for the soil moisture sensor and to signal the pump, some of the code was given by the SparkFun sensor.
    
    /*  Soil Moisture Basic Example
@@ -202,7 +206,8 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
     delay(50400000);
     }
    
-   #### Temperature and Humidity Sensor:
+ #### Temperature and Humidity Sensor:
+ 
  A humidity and temperature sensor was researched and chosen. The circuitry of the LCD and sensor can be seen in the circuit section above. The Arduino was anchored to the base of the stand for display of results and the sensor is fashioned by zip ties on the inside wall of the tote to measure the humidity and temperature of the plants environment.
    
    <img src= "humsensorinbed.jpg" width="300" height="150">
@@ -211,23 +216,27 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    
 ## Testing results:
    
-   ### Water Pump:
+### Water Pump:
+
    The pump was able to turn on for five seconds and turn off for five seconds. The pump was also successful in pumping water through the entire five feet of tubing needed. This was enough "data" to ensure it would work properly for this use. 
    ### Temperature Sensor:
    The temperature read in the room was 70.2 Degrees Fahrenheit. The temperature reached after two minutes of holding the sensor in a hand was 98.5 Degrees Fahrenheit.
    
    <img src= "fishfeeder.jpg" width="300" height="200">
    
-   ### Fish Feeder:
+### Fish Feeder:
+   
    The fish feeder output 2 ounces of food when it was set to run for one second. The feeder output 1 ounce of food when run for half a second. The feeder output 0.5 ounces of food when it ran for a quarter of a second. The feeder holds approximately 30 ounces of standard goldfish pellets.
    
-   ### Soil Moisture Sensor:
+### Soil Moisture Sensor:
+   
    The moisture was around 880 when we first watered the plants before hooking up the pump system. This was the desirable moisture level. When the sensor was removed from the soil, the moisture level dropped which then successfully triggered the pump.
    
-   ### Plant Lamp:
+### Plant Lamp:
    The lamp is able to turn on for 10 hours and off for 14 hours as long as it is plugged into the wall. These values were selected because it matches the night and day cycles for summer, which is the best time to grow small, green plants outdoors. The time cycles could be adjusted for different plant varieties
    
-   ### Temperature and Humidity Sensor:
+### Temperature and Humidity Sensor:
+
    The DHT sensor constantly outputs temperature in Fahrenheit and humidity on the display. If powered by a laptop, temperature in Celsius as well as the heat index in Celsius and Fahrenheit is available through the Arduino code.
 The lamp is able to turn on for 10 hours and off for 14 hours as long as it is plugged into the wall. 
 
