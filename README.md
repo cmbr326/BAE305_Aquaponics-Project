@@ -215,7 +215,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    ### Temperature Sensor:
    The temperature read in the room was 70.2 Degrees Fahrenheit. The temperature reached after two minutes of holding the sensor in a hand was 98.5 Degrees Fahrenheit.
    
-   <img src= "fishfeeder.jpg" width="300" height="200"
+   <img src= "fishfeeder.jpg" width="300" height="200">
    
    ### Fish Feeder:
    The fish feeder output 2 ounces of food when it was set to run for one second. The feeder output 1 ounce of food when run for half a second. The feeder output 0.5 ounces of food when it ran for a quarter of a second. The feeder holds approximately 30 ounces of standard goldfish pellets.
