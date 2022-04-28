@@ -80,7 +80,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
 
 ## Design Decision Discussion:
 
-   #### Water Pump:
+#### Water Pump:
    The water pump operated to move water from the fish tank to the irrigation system of the plant environment. Several design criteria were chosen in the placement and function of the pump. The model of the pump is the 3V-5V Submersible Motor Pump. The pump has a covering around it to ensure that neither large particulate nor fish are pulled into the valve. The pump is attached to the upper portion of the tank by Velcro. This placement allows for both convenient maintenance and minimal strain on the pump to move the water up around 1 foot. The pump operates off of a signal from the soil moisture sensor. 
    
    #### Temperature Sensor:
