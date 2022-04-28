@@ -94,6 +94,9 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    
    #### Soil Moisture Sensor:
    The circuit for the sensor was mounted to the font of the table for the plant bed so it could reach the inside of the bed, while also being near the board for the pump so it could send the moisture readings to the pump. The sensor was waterproofed with hot glue to ensure water wouldn't ruin it. Based on the recommended soil moisture for the plants, lettuce and basil, the moisture level 800 was determined to be the minimum level. If the level drops below, the pump is signaled. The power supply is a pack of batteries that is also attached to the stand. So that the moisture level coud be monitored,it was connected to an LCD screen. It will not show values under 800 because the pump is triggered and draws too much power, causing the screen to go blank. However, this isn't a problem since the value is not needed below 800. 
+   <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/moisturepanel.jpg" width="300" height="150">
+   
+   <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/moisture%20sensor%20in%20bed.jpg" width="300" height="150">
    
    #### Plant Bed:
    A clear plastic tote was used to hold the garden. Holes of about a ¼ in diameter were drilled about 2 in apart in the center region of the bottom of the tote.  Layers of fabric and a metal screen were placed at the bottom to keep dirt from falling through the holes. The rest of the tote was filled with dirt and plants on top. A tube was connected to the water pump and holes were put about 2 inches apart along the tube. The tube was snaked around the top of the garden so that water would be evenly dispersed.
@@ -103,7 +106,10 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    
    #### Temperature and Humidity Sensor:
  A humidity and temperature sensor was researched and chosen. The circuitry of the LCD and sensor can be seen in the circuit section above. The Arduino was anchored to the base of the stand for display of results and the sensor is fashioned by zip ties on the inside wall of the tote to measure the humidity and temperature of the plants environment.
- 
+
+   <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/humsensorinbed.jpg" width="300" height="150">
+   
+   <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/humidityscreen.jpg" width="300" height="150">
 ## Testing results:
    
    #### Water Pump:
@@ -111,7 +117,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    #### Temperature Sensor:
    The temperature read in the room was 70.2 Degrees Fahrenheit. THe temperature reached after two minutes of holding the sensor in a hand was 98.5 Degrees Fahrenheit.
    
-   <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/fishfeeder.jpg" width="500" height="400">
+   <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/fishfeeder.jpg" width="300" height="200">
    
    #### Fish Feeder:
    The fish feeder output 2 ounces of food when it was set to run for one second. The feeder output 1 ounce of food when run for half a second. The feeder output 0.5 ounces of food when it ran for a quarter of a second. The feeder holds approximately 30 ounces of standard goldfish pellets.
