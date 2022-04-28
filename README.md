@@ -125,7 +125,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    The moisture was around 880 when we first watered the plants before hooking up the pump system. This was the desirable moisture level. When the sensor was removed from the soil, the moisture level dropped which then successfully triggered the pump.
    
    #### Plant Lamp:
-   The lamp is able to turn on for 10 hours and off for 14 hours as long as it is plugged into the wall. 
+   The lamp is able to turn on for 10 hours and off for 14 hours as long as it is plugged into the wall. These values were selected because it matches the night and day cycles for summer, which is the best time to grow small, green plants outdoors. The time cycles could be adjusted for different plant varieties
    
    #### Temperature and Humidity Sensor:
    The DHT sensor constantly outputs temperature in Fahrenheit and humidity on the display. If powered by a laptop, temperature in Celsius as well as the heat index in Celsius and Fahrenheit is available through the Arduino code.
@@ -143,7 +143,7 @@ The testing completed to test the functionality of the compenents does not requi
    #### Soil Moisture Sensor:
    The moisture sensor was reading appropriate values, around 880. The minimum moisture level of 800 was enough for the plants, while not taking too much water from the fish tank. When the sensor was removed from the soil and exposed to the air, it detects a value lower than 800 and triggers the pump. 
    #### Plant Lamp:
-
+   The largest number usable for the variety of Arduino we are using is 2^32, which is about 2 billion. Our time values came in at well under this at only a few million. The plant lamp was found to be well-suited for our application, as we could use standard wall plugs connected to the Arduino which regulated the time. 
    #### Temperature and Humidity Sensor:
    The readings are accurate but the sensor is slow to react to extreme changes in temperature. Due to the size of the LCD only two readings will fit on the screen. While the sensor measures humidity and both temperature and heat index in Fahrenheit and Celcius, only humidity and temperature (Fahrenheit) are displayed since they are most relevant to the system.
 
