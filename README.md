@@ -9,7 +9,7 @@
  <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/IMG_6509.jpg" width="500" height="500">
  
 ## Design Description: 
- ![image](https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/IMG_6506.jpg)
+  <img src="(https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/IMG_6506.jpg" width="500" height="500">
    ### Supplies
 - Arduino Uno (3)
 - Water Pump (3V-5V Submersible Motor Pump)
