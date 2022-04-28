@@ -4,7 +4,7 @@
  
 ## Summary:
 
-   The purpose of this project is to have an autonomous aquaponics system which includes an autonomous fish tank and plant growing enviroment. The two systems, the fish tank and the garden, work together by providing and filtering water for eachother. Each of these components is vital to keep a livable enviroment for the fish while also benefiting the plants. 
+   The purpose of this project is to have an autonomous aquaponics system which includes an autonomous fish tank and plant growing enviroment. The two systems, the fish tank and the garden, work together by providing and filtering water for each other. 'The water from the fish tank is pumped into the garden when necessary, and the excess water from the garden precipitates back into the fish tank.' Each of these components is vital to keep a livable enviroment for the fish while also benefiting the plants. 'The system comes equiped with a grow lamp to give the plants the light that they need on a scheduled basis.'
   
  ![image](https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/IMG_3825.HEIC)
  
