@@ -13,7 +13,7 @@
 
   <img src= "IMG_6506.jpg" width="300" height="400">
   
-   ### Supplies
+#### Supplies
 - Arduino Uno (3)
 - Water Pump (3V-5V Submersible Motor Pump)
 - Motor (ElectroPeak DC Gear Motor)
@@ -30,7 +30,7 @@
 - Wood for suspension system
 - Tubing 
 
-   ### Wiring Diagrams
+#### Wiring Diagrams
 Fish Tank Circuits
 
 <img src="https://user-images.githubusercontent.com/102320028/165436275-fee0916d-5ee1-46fa-840d-867c48a4dd41.png" width="600" height="300">
