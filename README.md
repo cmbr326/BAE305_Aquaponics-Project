@@ -26,7 +26,7 @@
 - Fish
 - Fish food 
 - Large tote 
-- mesh screen
+- Mesh screen
 - Wood for suspension system
 - Tubing 
 
