@@ -209,23 +209,23 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
 
 ## Testing results:
    
-   #### Water Pump:
+   ### Water Pump:
    The pump was able to turn on for five seconds and turn off for five seconds. The pump was also successful in pumping water through the entire five feet of tubing needed. This was enough "data" to ensure it would work properly for this use. 
-   #### Temperature Sensor:
+   ### Temperature Sensor:
    The temperature read in the room was 70.2 Degrees Fahrenheit. The temperature reached after two minutes of holding the sensor in a hand was 98.5 Degrees Fahrenheit.
    
    <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/fishfeeder.jpg" width="300" height="200">
    
-   #### Fish Feeder:
+   ### Fish Feeder:
    The fish feeder output 2 ounces of food when it was set to run for one second. The feeder output 1 ounce of food when run for half a second. The feeder output 0.5 ounces of food when it ran for a quarter of a second. The feeder holds approximately 30 ounces of standard goldfish pellets.
    
-   #### Soil Moisture Sensor:
+   ### Soil Moisture Sensor:
    The moisture was around 880 when we first watered the plants before hooking up the pump system. This was the desirable moisture level. When the sensor was removed from the soil, the moisture level dropped which then successfully triggered the pump.
    
-   #### Plant Lamp:
+   ### Plant Lamp:
    The lamp is able to turn on for 10 hours and off for 14 hours as long as it is plugged into the wall. These values were selected because it matches the night and day cycles for summer, which is the best time to grow small, green plants outdoors. The time cycles could be adjusted for different plant varieties
    
-   #### Temperature and Humidity Sensor:
+   ### Temperature and Humidity Sensor:
    The DHT sensor constantly outputs temperature in Fahrenheit and humidity on the display. If powered by a laptop, temperature in Celsius as well as the heat index in Celsius and Fahrenheit is available through the Arduino code.
 The lamp is able to turn on for 10 hours and off for 14 hours as long as it is plugged into the wall. 
 
