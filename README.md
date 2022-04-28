@@ -55,6 +55,13 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
      - When the sensor was ready, it was placed in the soil and connected with the pump so that when the level dropped below 800, it would trigger the pump to start pumping water.
      - The sensor was also connected to an LCD screen so that the moisture level was displayed.
 
+   - The lamp was converted from DC to AC to control when the light was on.
+     -  For the lamp, we first tested a cycle of turning on for 5 seconds and off for 5 seconds, which was a success. We then changed the code so that it would be on and off for the proper amount of time for the plants.
+
+   - The temperature and humididty sensor was tested to ensure it worked properly before it was attached.
+     -  A DHT 20 was originally tested to measure temperature and humidity, through testing it would return ‘failure to read’ messages. The DHT 20 would be replaced by a DHT 22 which would return readings that would were found to be accurate in comparison to a standard thermometer’s readings.
+
+
 ## Design Decision Discussion:
 
    #### Water Pump:
@@ -76,9 +83,13 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    
    #### Plant Bed
    A clear plastic tote was used to hold the garden. Holes of about a ¼ in diameter were drilled about 2 in apart in the center region of the bottom of the tote.  Layers of fabric and a metal screen were placed at the bottom to keep dirt from falling through the holes. The rest of the tote was filled with dirt and plants on top. A tube was connected to the water pump and holes were put about 2 inches apart along the tube. The tube was snaked around the top of the garden so that water would be evenly dispersed.
+   
    #### Plant Lamp
    The automatic grow light was made using an extension cord, AC outlet, relay, Arduino, and wires. The circuitry can be built by following  [This Tutorial](https://www.circuitbasics.com/build-an-arduino-controlled-power-outlet/). The grow light was hung off a PVC pipe connected to the stand so that it would be well-positioned to give all plants adequate light.
-
+   
+   #### Temperature and Humidity Sensor 
+ A humidity and temperature sensor was researched and chosen. The circuitry of the LCD and sensor can be seen in the circuit section above. The Arduino was anchored to the base of the stand for display of results and the sensor is fashioned by zip ties on the inside wall of the tote to measure the humidity and temperature of the plants environment.
+ 
 ## Testing results:
    
    #### Water Pump:
@@ -89,7 +100,13 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    The fish feeder output 2 ounces of food when it was set to run for one second. The feeder output 1 ounce of food when run for half a second. The feeder output 0.5 ounces of food when it ran for a quarter of a second. The feeder holds approximately 30 ounces of standard goldfish pellets.
    #### Soil Moisture Sensor:
    The moisture was around 880 when we first watered the plants before hooking up the pump system. This was the desirable moisture level. When the sensor was removed from the soil, the moisture level dropped which then successfully triggered the pump.
+   
    #### Plant Lamp
+   
+   #### Temperature and Humidity Sensor 
+   The DHT sensor constantly outputs temperature in Fahrenheit and humidity on the display. If powered by a laptop, temperature in Celsius as well as the heat index in Celsius and Fahrenheit is available through the Arduino code.
+The lamp is able to turn on for 10 hours and off for 14 hours as long as it is plugged into the wall. 
+
 
 ## Test result Discussion:
 The testing completed to test the functionality of the compenents does not require exact data outputs. This is because the testing done on the temperature sensor and the water pump were done just to ensure that they could read values and turn on and off. 
@@ -102,3 +119,5 @@ The testing completed to test the functionality of the compenents does not requi
    #### Soil Moisture Sensor
    The moisture sensor was reading appropriate values, around 880. The minimum moisture level of 800 was enough for the plants, while not taking too much water from the fish tank. When the sensor was removed from the soil and exposed to the air, it detects a value lower than 800 and triggers the pump. 
    #### Plant Lamp
+
+   #### Temperature and Humidity Sensor 
