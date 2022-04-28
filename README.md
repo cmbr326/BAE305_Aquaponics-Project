@@ -32,8 +32,10 @@ Fish Tank Circuits
  ![image](https://user-images.githubusercontent.com/102320028/165436275-fee0916d-5ee1-46fa-840d-867c48a4dd41.png)
 Soil Moisture Diagram
  ![image](https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/soilMoisture.png)
-Soil moisture and pump 
+Soil Moisture Sensor and Pump 
  ![image](https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/circuit.jpg)
+ Temperature and Humidity Sensor
+ ![image](https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/circuit2.jpg)
  
 ## Testing Description: 
 Testing consisted of checking the sensor readings and the motor/pump functionality. Before soldering the wires and mounting the components to the build, it was important to check that all the components would operate correctly for their given job.   
