@@ -50,7 +50,7 @@ Soil Moisture Sensor and Pump
  
  
 ## Testing Description: 
-Testing consisted of checking the sensor readings and the motor/pump functionality. Before soldering the wires and mounting the components to the build, it was important to check that all the components would operate correctly for their given job.   
+Testing consisted of checking the sensor readings and the motor/pump functionality. Before soldering the wires and mounting the components to the build, it was important to check that all the components would operate correctly for their given job. All readings were checked to se if htey were within reason.
    - The temperature sensor for the fish tank was tested to ensure that it was picking up the correct temperature and the code was able to display it correctly on the LCD screen.
      - The temperature was initially tested by using heat from a person's hand to see if the temperature displayed was in the correct range and was able to fluctuate appropriately. The temperature sensor was held in a hand for two minutes and the results of the temperature change were displayed on the connected LCD screen. 
    
