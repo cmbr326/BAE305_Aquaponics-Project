@@ -7,12 +7,12 @@
 
    The purpose of this project is to have an autonomous aquaponics system which includes an autonomous fish tank and plant growing environment. The two systems, the fish tank and the garden, work together by providing and filtering water for each other. The water from the fish tank is pumped into the garden when the soil moisture drops below a certain level, and the excess water from the garden precipitates back into the fish tank. Each of these components is vital to keep a livable environment for the fish while also benefiting the plants. The system comes equipped with a grow lamp to give the plants the light that they need on a scheduled basis. Each sensor in the aquaponics system includes displays for the user to properly monitor the vital aspects of the plants and fish's environment.
   
-  <img src="IMG_6509.jpg" width="300" height="400">
+  <img src= "IMG_6509.jpg" width="300" height="400">
  
 ## Design Description: 
 
-  <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/IMG_6506.jpg" width="300" height="400">
-   
+  <img src= "IMG_6506.jpg" width="300" height="400">
+  
    ### Supplies
 - Arduino Uno (3)
 - Water Pump (3V-5V Submersible Motor Pump)
@@ -34,20 +34,20 @@
 Fish Tank Circuits
 
 <img src="https://user-images.githubusercontent.com/102320028/165436275-fee0916d-5ee1-46fa-840d-867c48a4dd41.png" width="600" height="300">
-  
+ 
 Soil Moisture Diagram
 
- <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/soilMoisture.png" width="500" height="400">
+ <img src= "soilMoisture.png" width="500" height="400">  
  
 Soil Moisture Sensor and Pump 
 
- <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/circuit.jpg" width="600" height="300">
+ <img src= "circuit.jpg" width="600" height="300">  
  
  Temperature and Humidity Sensor
  
- <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/circuit2.jpg" width="600" height="300">
+ <img src= "circuit2.jpg" width="600" height="300">  
  
-  <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/panels.jpg" width="500" height="400">
+ <img src= "panels.jpg" width="600" height="300">
  
  
 ## Testing Description: 
@@ -89,7 +89,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    #### Fish Feeder: 
    The Fish feeder consists of 7 individual 3D prints created on an Original Prusa Mini with PLA filament. These pieces include the hopper (which can hold 20 oz of food) and lid, two supporting joints to support and attach the system, the auger and auger tube, and the connecting joint for the motor. This was joined with tacky glue. The motor selected to turn the auger is the ElectroPeak DC Gear Motor. The system was then mounted with hot glue to a platform which was tied to the back left corner of the suspension system. This allows the feeder to hang over the tank and turn a decided amount of time, dispensing food directly into the tank. 
    
-   <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/render%20collection.png" width="600" height="300">
+   <img src= "render collection.png" width="600" height="300">
    
    #### Suspension System: 
    The suspension system was made of 2x4 wood to create two legs which could hold up the plant system above the tank. The need was for the center of the system to be open to allow water to drain from the holes of the planter back into the tank when necessary. This was done by creating two U shaped fixtures, then tying them together with another 2x4 on the sides on the platform. The suspension system also operates to hold up the electronics, including the fish feeder, Arduino, and screen display
@@ -170,9 +170,9 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
     }
    
    
-   <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/moisturepanel.jpg" width="300" height="150">
+   <img src= "moisturepanel.jpg" width="300" height="150">
    
-   <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/moisture%20sensor%20in%20bed.jpg" width="300" height="150">
+   <img src= "moisture sensor in bed.jpg" width="300" height="150">
    
    #### Plant Bed:
    A clear plastic tote was used to hold the garden. Holes of about a ¼ in diameter were drilled about 2 in apart in the center region of the bottom of the tote.  Layers of fabric and a metal screen were placed at the bottom to keep dirt from falling through the holes. The rest of the tote was filled with dirt and plants on top. A tube was connected to the water pump and holes were put about 2 inches apart along the tube. The tube was snaked around the top of the garden so that water would be evenly dispersed.
@@ -203,11 +203,11 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    
    #### Temperature and Humidity Sensor:
  A humidity and temperature sensor was researched and chosen. The circuitry of the LCD and sensor can be seen in the circuit section above. The Arduino was anchored to the base of the stand for display of results and the sensor is fashioned by zip ties on the inside wall of the tote to measure the humidity and temperature of the plants environment.
-
-   <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/humsensorinbed.jpg" width="300" height="150">
    
-   <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/humidityscreen.jpg" width="300" height="150">
-
+   <img src= "humsensorinbed.jpg" width="300" height="150">
+   
+   <img src= "humidityscreen.jpg" width="300" height="150">
+   
 ## Testing results:
    
    ### Water Pump:
@@ -215,7 +215,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    ### Temperature Sensor:
    The temperature read in the room was 70.2 Degrees Fahrenheit. The temperature reached after two minutes of holding the sensor in a hand was 98.5 Degrees Fahrenheit.
    
-   <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/fishfeeder.jpg" width="300" height="200">
+   <img src= "fishfeeder.jpg" width="300" height="200"
    
    ### Fish Feeder:
    The fish feeder output 2 ounces of food when it was set to run for one second. The feeder output 1 ounce of food when run for half a second. The feeder output 0.5 ounces of food when it ran for a quarter of a second. The feeder holds approximately 30 ounces of standard goldfish pellets.
