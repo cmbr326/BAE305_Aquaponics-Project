@@ -94,7 +94,80 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    The suspension system was made of 2x4 wood to create two legs which could hold up the plant system above the tank. The need was for the center of the system to be open to allow water to drain from the holes of the planter back into the tank when necessary. This was done by creating two U shaped fixtures, then tying them together with another 2x4 on the sides on the platform. The suspension system also operates to hold up the electronics, including the fish feeder, Arduino, and screen display
    
    #### Soil Moisture Sensor:
-   The circuit for the sensor was mounted to the font of the table for the plant bed so it could reach the inside of the bed, while also being near the board for the pump so it could send the moisture readings to the pump. The sensor was waterproofed with hot glue to ensure water wouldn't ruin it. Based on the recommended soil moisture for the plants, lettuce and basil, the moisture level 800 was determined to be the minimum level. If the level drops below, the pump is signaled. The power supply is a pack of batteries that is also attached to the stand. The sensor was connected to an LCD screen so that the moisture level could be monitored. It will not show values under 800 because the pump is triggered and draws too much power, causing the screen to go blank. However, this isn't a problem since the value is not needed below 800. 
+   The circuit for the sensor was mounted to the font of the table for the plant bed so it could reach the inside of the bed, while also being near the board for the pump so it could send the moisture readings to the pump. The sensor was waterproofed with hot glue to ensure water wouldn't ruin it. Based on the recommended soil moisture for the plants, lettuce and basil, the moisture level 800 was determined to be the minimum level. If the level drops below, the pump is signaled. The power supply is a pack of batteries that is also attached to the stand. The sensor was connected to an LCD screen so that the moisture level could be monitored. It will not show values under 800 because the pump is triggered and draws too much power, causing the screen to go blank. However, this isn't a problem since the value is not needed below 800. The following code was used for the soil moisture sensor and to signal the pump, some of the code was given by the SparkFun sensor.
+   
+   /*  Soil Moisture Basic Example
+    This sketch was written by SparkFun Electronics
+    Joel Bartlett 
+    August 31, 2015
+
+    Basic skecth to print out soil moisture values to the Serial Monitor 
+
+    Released under the MIT License(http://opensource.org/licenses/MIT)
+*/
+int pump = 4;
+int val = 0; //value for storing moisture value 
+int soilPin = A0;//Declare a variable for the soil moisture sensor 
+int soilPower = 7;//Variable for Soil moisture Power
+
+#include <LiquidCrystal.h>
+LiquidCrystal lcd(13, 12, 11, 10, 9, 8);
+
+//Rather than powering the sensor through the 3.3V or 5V pins, 
+//we'll use a digital pin to power the sensor. This will 
+//prevent corrosion of the sensor as it sits in the soil. 
+
+
+void setup() 
+{
+  Serial.begin(9600); // open serial over USB
+  pinMode(pump, OUTPUT);
+  pinMode(soilPower, OUTPUT);//Set D7 as an OUTPUT
+  digitalWrite(soilPower, LOW);//Set to LOW so no power is flowing through the sensor
+
+  lcd.begin(16, 2);
+  lcd.clear();
+  
+
+}
+
+void loop() 
+{
+Serial.print("Soil Moisture = ");    
+//get soil moisture value from the function below and print it
+Serial.println(readSoil());
+
+//This 1 second timefrme is used so you can test the sensor and see it change in real-time.
+//For in-plant applications, you will want to take readings much less frequently.
+delay(1000);//take a reading every second
+
+lcd.clear(); 
+lcd.print("Moisture: ");                             
+lcd.setCursor(10, 0);                      
+                
+lcd.print(val);  
+
+if (val <= 800){
+  digitalWrite(pump, HIGH);
+  delay(30000);
+  digitalWrite(pump, LOW);
+ 
+  
+}
+
+}
+//This is a function used to get the soil moisture content
+int readSoil()
+  
+{
+
+    digitalWrite(soilPower, HIGH);//turn D7 "On"
+    delay(10);//wait 10 milliseconds 
+    val = analogRead(soilPin);//Read the SIG value form sensor 
+    digitalWrite(soilPower, LOW);//turn D7 "Off"
+    return val;//send current moisture value
+}
+   
    
    <img src="https://github.com/cmbr326/BAE305_Aquaponics-Project/blob/main/moisturepanel.jpg" width="300" height="150">
    
@@ -124,6 +197,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    
    #### Fish Feeder:
    The fish feeder output 2 ounces of food when it was set to run for one second. The feeder output 1 ounce of food when run for half a second. The feeder output 0.5 ounces of food when it ran for a quarter of a second. The feeder holds approximately 30 ounces of standard goldfish pellets.
+   
    #### Soil Moisture Sensor:
    The moisture was around 880 when we first watered the plants before hooking up the pump system. This was the desirable moisture level. When the sensor was removed from the soil, the moisture level dropped which then successfully triggered the pump.
    
@@ -144,7 +218,7 @@ The testing completed to test the functionality of the components does not requi
    #### Fish Feeder:
    After implementation of the testing tank, the feeder was initially over feeding. Using guppies, the decision was to crush food pellets into smaller pieces and insert those into the hopper. This allowed more particulate to gather in the auger than previously tested, so there was a change required in the turning time per feeding. Moving forward with implementation to other fish and food types, the capabilities of the auger should be considered. If larger food is used, it is necessary to compare the amount leaving the auger per turn. For the mentioned food and feeding needs, it was ultimately decided the quarter of a second motor run was sufficient in providing enough food to the fish without overfeeding. When the feeder is fully stocked, it will run for approximately 40 cycles of feeding, which is equal to 20 days.
    #### Soil Moisture Sensor:
-   The moisture sensor was reading appropriate values, around 880. The minimum moisture level of 800 was enough for the plants, while not taking too much water from the fish tank. When the sensor was removed from the soil and exposed to the air, it detects a value lower than 800 and triggers the pump. 
+   The moisture sensor was reading appropriate values, around 880. The minimum moisture level of 800 was enough for the plants, while not taking too much water from the fish tank. When the sensor was removed from the soil and exposed to the air, it detects a value lower than 800 and triggers the pump. The only issue we ran into, was when the sensor detected a value lower than 800, the LCD screen would turn off because the pump was drawing too much power. It's okay if the value doesn't show below 800 because it should correct itself when it gets that low. 
    #### Plant Lamp:
    The largest number usable for the variety of Arduino we are using is 2^32, which is about 2 billion. Our time values came in at well under this at only a few million. The plant lamp was found to be well-suited for our application, as we could use standard wall plugs connected to the Arduino which regulated the time. 
    #### Temperature and Humidity Sensor:
