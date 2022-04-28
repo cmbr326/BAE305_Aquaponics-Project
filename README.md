@@ -125,3 +125,5 @@ The testing completed to test the functionality of the compenents does not requi
    #### Plant Lamp:
 
    #### Temperature and Humidity Sensor:
+   he readings are accurate but the sensor is slow to react to extreme changes in temperature. Due to the size of the LCD only two readings will fit on the screen. While the sensor measures humidity and both temperature and heat index in Fahrenheit and Celcius, only humidity and temperature (Fahrenheit) are displayed since they are most relevant to the system.
+
