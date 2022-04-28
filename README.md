@@ -179,10 +179,10 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    
    <img src= "moisture sensor in bed.jpg" width="300" height="150">
    
-   #### Plant Bed:
+#### Plant Bed:
    A clear plastic tote was used to hold the garden. Holes of about a ¼ in diameter were drilled about 2 in apart in the center region of the bottom of the tote.  Layers of fabric and a metal screen were placed at the bottom to keep dirt from falling through the holes. The rest of the tote was filled with dirt and plants on top. A tube was connected to the water pump and holes were put about 2 inches apart along the tube. The tube was snaked around the top of the garden so that water would be evenly dispersed.
    
-   #### Plant Lamp:
+#### Plant Lamp:
    The automatic grow light was made using an extension cord, AC outlet, relay, Arduino, and wires. The circuitry can be built by following  [This Tutorial](https://www.circuitbasics.com/build-an-arduino-controlled-power-outlet/). The grow light was hung off a PVC pipe connected to the stand so that it would be well-positioned to give all plants adequate light. The following code was used to time when the light was on and off.
    
        void setup() {
@@ -206,7 +206,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
     delay(50400000);
     }
    
- #### Temperature and Humidity Sensor:
+#### Temperature and Humidity Sensor:
  
  A humidity and temperature sensor was researched and chosen. The circuitry of the LCD and sensor can be seen in the circuit section above. The Arduino was anchored to the base of the stand for display of results and the sensor is fashioned by zip ties on the inside wall of the tote to measure the humidity and temperature of the plants environment.
    
@@ -216,7 +216,7 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    
 ## Testing results:
    
-### Water Pump:
+#### Water Pump:
 
    The pump was able to turn on for five seconds and turn off for five seconds. The pump was also successful in pumping water through the entire five feet of tubing needed. This was enough "data" to ensure it would work properly for this use. 
    ### Temperature Sensor:
@@ -224,18 +224,18 @@ Testing consisted of checking the sensor readings and the motor/pump functionali
    
    <img src= "fishfeeder.jpg" width="300" height="200">
    
-### Fish Feeder:
+#### Fish Feeder:
    
    The fish feeder output 2 ounces of food when it was set to run for one second. The feeder output 1 ounce of food when run for half a second. The feeder output 0.5 ounces of food when it ran for a quarter of a second. The feeder holds approximately 30 ounces of standard goldfish pellets.
    
-### Soil Moisture Sensor:
+#### Soil Moisture Sensor:
    
    The moisture was around 880 when we first watered the plants before hooking up the pump system. This was the desirable moisture level. When the sensor was removed from the soil, the moisture level dropped which then successfully triggered the pump.
    
-### Plant Lamp:
+#### Plant Lamp:
    The lamp is able to turn on for 10 hours and off for 14 hours as long as it is plugged into the wall. These values were selected because it matches the night and day cycles for summer, which is the best time to grow small, green plants outdoors. The time cycles could be adjusted for different plant varieties
    
-### Temperature and Humidity Sensor:
+#### Temperature and Humidity Sensor:
 
    The DHT sensor constantly outputs temperature in Fahrenheit and humidity on the display. If powered by a laptop, temperature in Celsius as well as the heat index in Celsius and Fahrenheit is available through the Arduino code.
 The lamp is able to turn on for 10 hours and off for 14 hours as long as it is plugged into the wall. 
@@ -243,16 +243,18 @@ The lamp is able to turn on for 10 hours and off for 14 hours as long as it is p
 
 ## Test result Discussion:
 The testing completed to test the functionality of the components does not require exact data outputs. This is because the testing done on the temperature sensor and the water pump were done just to ensure that they could read values and turn on and off. 
-   #### Water Pump:
+####  Water Pump:
+
    The testing done was functionality testing so no exact data outputs are needed. The volumetric amount of water does not need to be measured because the water is based on soil moisture and not a calculation based on water quantity. Testing done to ensure that the pump was strong enough to meet the needs of the system showed that it well exceeded possible limitations. 
-   #### Temperature Sensor:
+#### Temperature Sensor:
    The temperature sensor read appropriate values based on room temperature and human hand temperature. Testing resulted in the decision to not include a heater in the system. This may need to be altered for alternate implementation tactics. 
    #### Fish Feeder:
+   
    After implementation of the testing tank, the feeder was initially over feeding. Using guppies, the decision was to crush food pellets into smaller pieces and insert those into the hopper. This allowed more particulate to gather in the auger than previously tested, so there was a change required in the turning time per feeding. Moving forward with implementation to other fish and food types, the capabilities of the auger should be considered. If larger food is used, it is necessary to compare the amount leaving the auger per turn. For the mentioned food and feeding needs, it was ultimately decided the quarter of a second motor run was sufficient in providing enough food to the fish without overfeeding. When the feeder is fully stocked, it will run for approximately 40 cycles of feeding, which is equal to 20 days.
-   #### Soil Moisture Sensor:
+#### Soil Moisture Sensor:
    The moisture sensor was reading appropriate values, around 880. The minimum moisture level of 800 was enough for the plants, while not taking too much water from the fish tank. When the sensor was removed from the soil and exposed to the air, it detects a value lower than 800 and triggers the pump. The only issue we ran into, was when the sensor detected a value lower than 800, the LCD screen would turn off because the pump was drawing too much power. It's okay if the value doesn't show below 800 because it should correct itself when it gets that low. 
-   #### Plant Lamp:
+#### Plant Lamp:
    The largest number usable for the variety of Arduino we are using is 2^32, which is about 2 billion. Our time values came in at well under this at only a few million. The plant lamp was found to be well-suited for our application, as we could use standard wall plugs connected to the Arduino which regulated the time. 
-   #### Temperature and Humidity Sensor:
+#### Temperature and Humidity Sensor:
    The readings are accurate, but the sensor is slow to react to extreme changes in temperature. Due to the size of the LCD only two readings will fit on the screen. While the sensor measures humidity and both temperature and heat index in Fahrenheit and Celsius, only humidity and temperature (Fahrenheit) are displayed since they are most relevant to the system.
 
